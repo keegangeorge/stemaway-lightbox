@@ -3,6 +3,11 @@
 </script>
 
 <script>
- new Siema();
+const mySiema = new Siema();
+const spagesPrev = document.querySelector('.spages-apply-page-prev');
+const spagesNext = document.querySelector('.spages-apply-page-next');
+
+spagesPrev.addEventListener('click', () => mySiema.prev());
+spagesNext.addEventListener('click', () => mySiema.next());
 </script>
 
